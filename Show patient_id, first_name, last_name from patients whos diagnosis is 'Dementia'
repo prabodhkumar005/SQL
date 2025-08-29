@@ -1,0 +1,7 @@
+SELECT
+  patients.patient_id,
+  first_name,
+  last_name
+FROM patients
+  JOIN admissions ON admissions.patient_id = patients.patient_id
+WHERE diagnosis = 'Dementia';
